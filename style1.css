@@ -1,0 +1,207 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+	animation: body 20s ease-out infinite;
+}
+@keyframes body{
+	from{
+		background-color: rgb(235, 241, 201);
+	}
+	to{
+		background-color: rgb(7, 62, 129);
+	}
+}
+.back{
+    height: 300px;
+    width: 100%;
+	opacity: 0.7;
+    position: absolute;
+	bottom:1px
+}
+.car{
+	height: 100px;
+    width: 140px;
+	margin-left:95%;
+	margin-right: 5px;
+	overflow: hidden;
+	position: absolute;	
+	right:10px;
+	bottom: 10px;
+	opacity: 1;
+	animation: car 20s linear infinite;
+}
+
+@keyframes car{
+	from{
+		right:10px;
+		bottom: 10px;
+	}
+	to{
+		right:1500px;
+		bottom: 10px;
+	}
+}
+.sec1{
+		height: 500px;
+		width: 100%;
+		margin-top:60px;
+		
+	
+}
+.btn:hover{
+	background-color: brown;
+}
+.car2{
+	height: 60px;
+    width: 100px;
+	overflow: hidden;
+	position: absolute;	
+	left:-80px;
+	bottom: 80px;
+	opacity: 1;
+	animation: car2 20s linear infinite;
+}
+
+@keyframes car2{
+	from{
+		left:-80px;
+		bottom: 80px;
+	}
+	to{
+		left:1300px;
+		bottom: 80px;
+	}
+}
+.cls1{
+	margin-top: 10px;
+	height: 200px;
+	width: 150px;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 5%;
+}
+
+#id2{
+	background-color: orchid;
+	position: absolute;
+	left: 150px;
+	animation: id2 5s linear;
+	transition: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+@keyframes id2{
+	from{
+		left:150px;
+		
+	}
+	to{
+		left:1050px;
+	}
+	
+}
+#id3{
+	background-color:limegreen;
+	position: absolute;
+	left: 150px;
+	animation: id3 5s linear;
+	transition: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+@keyframes id3{
+	from{
+		left:150px;
+		
+	}
+	to{
+		left:900px;
+	}
+	
+}
+#id4{
+	background-color: aquamarine;
+	position: absolute;
+	left: 150px;
+	animation: id4 5s linear;
+	transition: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+@keyframes id4{
+	from{
+		left:150px;
+		
+	}
+	to{
+		left:750px;
+	}
+	
+}
+
+#id5{
+	background-color: lightgreen;
+	position: absolute;
+	left: 150px;
+	animation: id5 5s linear;
+	transition: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+@keyframes id5{
+	from{
+		left:150px;
+		
+	}
+	to{
+		left:600px;
+	}
+	
+}
+
+#id7{
+	background-color: goldenrod;
+	position: absolute;
+	left: 150px;
+	animation: id7 5s linear;
+	transition: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+@keyframes id7{
+	from{
+		left:150px;
+		
+	}
+	to{
+		left:450px;
+	}
+	
+}
+#id8{
+	background-color: rgb(167, 210, 108);
+	position: absolute;
+	left: 150px;
+	animation: id8 5s linear;
+	transition: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+@keyframes id8{
+	from{
+		left:150px;
+		
+	}
+	to{
+		left:300px;
+	}
+	
+}
+
+#id6{
+	background-color:gold;
+	position: absolute;
+	left: 150px;
+}
+
