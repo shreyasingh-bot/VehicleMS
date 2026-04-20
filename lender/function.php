@@ -2,7 +2,7 @@
 
 function get_admin_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $admin_count = 0;
     $query = "select count(*) as admin_count from admin";
     $query_run = mysqli_query($connection,$query);
@@ -14,7 +14,7 @@ function get_admin_count(){
 
 function get_user_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $user_count = 0;
     $query = "select count(*) as user_count from user";
     $query_run = mysqli_query($connection,$query);
@@ -26,7 +26,7 @@ function get_user_count(){
 
 function get_lender_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $len_count = 0;
     $query = "select count(*) as len_count from lender";
     $query_run = mysqli_query($connection,$query);
@@ -38,7 +38,7 @@ function get_lender_count(){
 
 function get_veh_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $veh_count = 0;
     $query = "select count(*) as veh_count from vehi where lunid= $_SESSION[unid]";
     $query_run = mysqli_query($connection,$query);
@@ -50,7 +50,7 @@ function get_veh_count(){
 
 function get_approve_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $approve_count = 0;
     $query = "select count(*) as approve_count from approve  where  lunid= $_SESSION[unid]";
     $query_run = mysqli_query($connection,$query);
@@ -62,7 +62,7 @@ function get_approve_count(){
 
 function get_notelen_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $notelen_count = 0;
     $query = "select count(*) as notelen_count from note_lender";
     $query_run = mysqli_query($connection,$query);
@@ -74,7 +74,7 @@ function get_notelen_count(){
 
 function get_noteuser_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $noteuser_count = 0;
     $query = "select count(*) as noteuser_count from note_user";
     $query_run = mysqli_query($connection,$query);
@@ -86,7 +86,7 @@ function get_noteuser_count(){
 
 function get_feed_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $feed_count = 0;
     $query = "select count(*) as feed_count from ssue";
     $query_run = mysqli_query($connection,$query);
@@ -98,7 +98,7 @@ function get_feed_count(){
 
 function get_request_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $req_count = 0;
     $query = "select count(*) as req_count from request where  lunid= $_SESSION[unid]";
     $query_run = mysqli_query($connection,$query);
@@ -110,7 +110,7 @@ function get_request_count(){
 
 function get_userapprove_count(){
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-     
+        
     $approve_count = 0;
     $query = "select count(*) as approve_count from approve where unid= $_SESSION[unid]";
     $query_run = mysqli_query($connection,$query);

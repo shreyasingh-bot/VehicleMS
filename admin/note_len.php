@@ -1,7 +1,7 @@
 <?php
     require('common.php');
     $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-	 
+	    
     $unid ="";
 	$note = "";
 	$query = "select * from note_lender";
@@ -24,7 +24,7 @@
 					</thead>
 					<?php
 						$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-						 
+						    
 						$query = "select * from note_lender";
 						$query_run = mysqli_query($connection,$query);
 						while ($row = mysqli_fetch_assoc($query_run)){
