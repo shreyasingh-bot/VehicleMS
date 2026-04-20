@@ -1,6 +1,6 @@
 <?php
 	require('common.php');
-	$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+	$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278","if0_41708461_vehiclems");
 	    
 	$lunid = "";
 	$lname = "";
@@ -72,7 +72,7 @@
 </html>
 <?php
 	if(isset($_POST['update'])){
-		$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+		$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278","if0_41708461_vehiclems");
 		    
 		$query = "update vehi set  name = '$_POST[name]', vehno = '$_POST[vehno]', type= '$_POST[type]', desp = '$_POST[des]',price = '$_POST[price]',address = '$_POST[address]' where cid = $_GET[bn]";
 		$query_run = mysqli_query($connection,$query);
