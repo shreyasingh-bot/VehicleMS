@@ -2,8 +2,8 @@
 	require('common.php');
 	if(isset($_SESSION['name']))
 	{ 
-		$connection = mysqli_connect("localhost","root","");
-		$db = mysqli_select_db($connection,"vehicle"); 
+		$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+		  
 		$sql="SELECT * FROM chat";
 		$query = mysqli_query($connection,$sql);
 ?>
