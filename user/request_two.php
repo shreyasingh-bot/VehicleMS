@@ -1,6 +1,6 @@
 <?php
     require('common.php');
-    $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+    $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278","if0_41708461_vehiclems");
 	    
     $name="";
     $cid="";
@@ -75,7 +75,7 @@
 <?php
 	if(isset($_POST['request']))
 	{
-		$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+		$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278","if0_41708461_vehiclems");
 		    
 		$query = "insert into request values(null,'$_SESSION[unid]','$_SESSION[name]','$lunid','$cid','$name','$vehno','$_POST[days]','$_POST[pdate]','$_POST[pick]','$_POST[tid]',CURRENT_TIMESTAMP)";
 		$query_run = mysqli_query($connection,$query);

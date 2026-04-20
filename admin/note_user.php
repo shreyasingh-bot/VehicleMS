@@ -1,6 +1,6 @@
 <?php
     require('common.php');
-    $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+    $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278","if0_41708461_vehiclems");
 	    
     $unid ="";
 	$note = "";
@@ -23,7 +23,7 @@
 						</tr>
 					</thead>
 					<?php
-						$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+						$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278","if0_41708461_vehiclems");
 						    
 						$query = "select * from note_user";
 						$query_run = mysqli_query($connection,$query);
