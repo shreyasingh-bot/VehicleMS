@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-	 
+	$db =   ($connection,"vehicle");
 	$rqtid = "";
 	$unid = "";
 	$uname = "";
@@ -31,7 +31,7 @@
 <?php
 	
 		$connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-		 
+		$db =   ($connection,"vehicle");
         $query_var= "insert into approve values ('$rqtid','$_SESSION[unid]','$unid','$uname','$cid','$vname','$vnum','$days','$date','$pick','$tid')";
 		$query_run = mysqli_query($connection,$query_var);
 

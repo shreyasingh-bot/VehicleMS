@@ -21,7 +21,7 @@
     <?php
     if(isset($_POST['update'])){
     $connection= mysqli_connect("localhost","root","");
-    $db= mysqli_select_db($connection,"vehicle");
+    $db=   ($connection,"vehicle");
     $query_var= "insert into ssue values (null,'$_POST[issue]')";
     $query_run= mysqli_query($connection,$query_var);
     

@@ -73,7 +73,7 @@
 
                         if(isset($_POST['login'])) {
                             $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-                             
+                            $db =   ($connection,"vehicle");
                             $query = "SELECT * FROM admin WHERE email = '$_POST[email]'";
                             $query_run = mysqli_query($connection,$query);
                             while ($row = mysqli_fetch_assoc($query_run)) {
