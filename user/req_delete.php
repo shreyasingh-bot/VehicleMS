@@ -1,7 +1,7 @@
 <?php 
 
 $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-$db =   ($connection,"vehicle");
+    
 $query_v= "delete from request where rqtid = $_GET[bn]";
 $query_r = mysqli_query($connection,$query_v);
 

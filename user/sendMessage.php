@@ -1,7 +1,7 @@
 <?php
 session_start();
 $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
-$db =   ($connection,"vehicle"); ;
+     ;
 
 if($_POST)
 {

@@ -1,7 +1,7 @@
 <?php
     session_start();
-    $connection= mysqli_connect("localhost","root","");
-    $db=   ($connection,"vehicle");
+        $connection = mysqli_connect("sql102.infinityfree.com","if0_41708461","adgjl85278v","if0_41708461_vehiclems");
+     
     $query="update lender set name='$_POST[name]', email='$_POST[email]', address='$_POST[address]' , mobile='$_POST[mobile]' where unid='$_SESSION[unid]'";
     $query_run=mysqli_query($connection,$query);
 
